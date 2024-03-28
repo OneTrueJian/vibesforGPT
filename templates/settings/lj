@@ -1,0 +1,11 @@
+[files]
+geometry:                      geometry.in
+
+[calculator]
+name:                          lj
+
+[calculator.parameters]
+# parameters for LJ Argon
+sigma:    3.405
+epsilon:  0.010325 
+rc:       13.0

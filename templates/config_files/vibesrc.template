@@ -1,0 +1,10 @@
+# System informations to get vibes running, please adjust:
+# basissetloc: location of the FHIaims basissets
+# aims_command: prefereably a script that runs aims, or the command to run it,
+#                 e.g. `mpirun aims.x` or similar
+#
+# When adjusted, please copy to ~/.vibesrc
+
+[machine]
+ basissetloc =      /some/path/to/FHIaims/aimsfiles/species_defaults
+ aims_command =     run_aims

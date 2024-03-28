@@ -1,0 +1,9 @@
+[slurm]
+name:         test
+tag:          vibes
+mail_type:    all
+mail_address: your@mail.com
+nodes:        1
+cores:        32
+queue:        express
+timeout:      30

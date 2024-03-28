@@ -1,0 +1,26 @@
+[files]
+geometry:                      geometry.in
+geometries:                    geometry.in.???
+primitive:                     geometry.in.primitive
+supercell:                     geometry.in.supercell
+
+[calculator]
+name:                          aims
+workdir:                       ${name}.${calculator.parameters:xc}
+
+[calculator.parameters]
+xc:                            pw-lda
+charge_mix_param:              0.3
+sc_accuracy_rho:               1e-6
+
+[calculator.kpoints]
+density:                       5
+
+[calculator.basissets]
+default:                       light
+# Si:                            intermediate
+# O:                             tight
+# fallback:                      light
+
+[calculator.socketio]
+port:                          null

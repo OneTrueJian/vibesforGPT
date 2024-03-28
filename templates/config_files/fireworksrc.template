@@ -1,0 +1,20 @@
+[fireworks]
+config_dir: "~/.fireworks"
+tasks2queue = ["vibes.relaxation.bfgs.relax", "vibes.fireworks.tasks.calculate_wrapper.wrap_calc_socket", "vibes.k_grid.converge_kgrid.converge_kgrid", "vibes.fireworks.tasks.calculate_wrapper.wrap_calculate", "vibes.fireworks.tasks.md.run" ]
+
+[fireworks.remote]
+host = ["remote.host.path"]
+config_dir = ["/path/to/remote/home/.fireworks/"]
+launch_dir = "."
+
+[fireworks.remote.authorization]
+user = remote_username
+password = null
+gss_auth = True
+
+[fireworks.remote.launch]
+njobs_queue = 0
+njobs_block = 500
+reserve = True
+nlaunches = 0
+sleep_time = 60
